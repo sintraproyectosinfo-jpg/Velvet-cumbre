@@ -7,165 +7,106 @@
     <style>
         body {
             font-family: 'Georgia', serif;
-            background-color: #121212;
-            color: #e0e0e0;
+            background-color: #0b0b0b;
+            color: #f5f5f5;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
+            padding: 20px;
             text-align: center;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            padding: 40px 20px;
-            background-color: #000000;
-            border-bottom: 1px solid #333;
-        }
-        /* TAMAÑO DEL LOGO CORREGIDO */
-        header img {
-            max-width: 150px; 
-            height: auto;
+        .header-box {
+            padding: 30px 10px;
+            border-bottom: 1px solid #222;
             margin-bottom: 20px;
-            border-radius: 50%; /* Mantiene el estilo circular si es tu diseño */
-            border: 2px solid #5d4037;
         }
-        h1 {
-            font-size: 2.5em;
-            color: #fff;
-            margin: 10px 0 5px;
-            font-weight: normal;
+        .brand-title {
+            font-size: 2em;
+            color: #ffffff;
+            letter-spacing: 2px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .brand-sub {
+            font-size: 0.9em;
+            color: #bcaaa4;
+            letter-spacing: 4px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        .location {
+            font-size: 0.8em;
+            color: #888;
             letter-spacing: 1px;
         }
-        h2 {
-            font-size: 1.2em;
-            color: #8d6e63;
+        .card {
+            background-color: #161616;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 25px 20px;
+            margin: 20px auto;
+            max-width: 500px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .card h3 {
+            font-size: 1.3em;
+            color: #fff;
             margin-top: 0;
-            font-weight: normal;
-        }
-        .section {
-            padding: 60px 20px;
-            border-bottom: 1px solid #333;
-        }
-        .section h3 {
-            font-size: 1.8em;
-            margin-bottom: 30px;
-            color: #fff;
-        }
-        /* IMAGENES DE CAFE PROFESIONALES (ENLACES EXTERNOS) */
-        .coffee-img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            margin-bottom: 20px;
-            border: 1px solid #5d4037;
-        }
-        .plan-card {
-            background-color: #1e1e1e;
-            padding: 40px;
-            margin-bottom: 30px;
-            border: 1px solid #333;
-            border-radius: 5px;
-        }
-        .plan-card h4 {
-            font-size: 1.5em;
             margin-bottom: 10px;
-            color: #fff;
         }
-        .plan-price {
-            font-size: 2em;
-            color: #a1887f;
+        .price {
+            font-size: 1.4em;
+            color: #d7ccc8;
             margin-bottom: 20px;
         }
-        .whatsapp-btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #5d4037;
-            color: #fff;
+        .btn {
+            display: block;
+            background-color: #4e342e;
+            color: #ffffff;
+            padding: 14px;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-            margin-top: 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.95em;
+            letter-spacing: 1px;
         }
-        .whatsapp-btn:hover {
-            background-color: #795548;
+        .btn:hover {
+            background-color: #5d4037;
         }
         footer {
-            padding: 40px 20px;
-            background-color: #000000;
-            font-size: 0.9em;
-            color: #757575;
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #666;
+            padding-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <!-- TU LOGO AHORA ESTA ARRIBA -->
-        <img src="https://i.imgur.com/aH5yv0N.png" alt="Velvet Cumbre Logo">
-        <h1>Velvet Cumbre</h1>
-        <h2>RESERVE COFFEE</h2>
-        <p>"El café de especialidad que eleva la experiencia"</p>
-    </header>
+    <div class="header-box">
+        <h1 class="brand-title">Velvet Cumbre</h1>
+        <div class="brand-sub">RESERVE COFFEE</div>
+        <div class="location">EL SALVADOR • 1500 MSNM</div>
+    </div>
 
-    <div class="container">
+    <div class="card">
+        <h3>Plan Boutique</h3>
+        <div class="price">$24.00 / mes</div>
+        <a href="https://wa.me/50379005833?text=Hola!%20Quisiera%20solicitar%20el%20Plan%20Boutique." class="btn">Solicitar Plan Boutique</a>
+    </div>
 
-        <div class="section" id="cafe">
-            <h3>Nuestra Selección</h3>
-            <img src="https://images.unsplash.com/photo-1559496417-e7f25b248f42?q=80&w=800&auto=format&fit=crop" alt="Bolsas de café premium" class="coffee-img">
-            <p>Café de altura cultivado en El Salvador, seleccionado meticulosamente para ofrecer una experiencia sensorial inigualable en cada taza.</p>
-            <p>Notas de cata: Cítricos, chocolate, caramelo y frutos rojos. Un perfil complejo y equilibrado.</p>
-        </div>
+    <div class="card">
+        <h3>Plan Boutique Master</h3>
+        <div class="price">$66.00 / mes</div>
+        <a href="https://wa.me/50379005833?text=Hola!%20Quisiera%20solicitar%20el%20Plan%20Boutique%20Master." class="btn">Solicitar Plan Master</a>
+    </div>
 
-        <div class="section" id="planes">
-            <h3>Planes de Suscripción</h3>
-            
-            <div class="plan-card">
-                <h4>Plan Boutique</h4>
-                <p class="plan-price">$24.00 / mes</p>
-                <ul style="list-style: none; padding: 0;">
-                    <li>✓ 2 Bolsas de 250g</li>
-                    <li>✓ Envío gratis en El Salvador</li>
-                    <li>✓ 1 Exhibidor para tu estación de café</li>
-                </ul>
-                <a href="https://wa.me/50379005833?text=Hola!%20Quisiera%20suscribirme%20al%20Plan%20Boutique." class="whatsapp-btn">Solicitar Plan Boutique</a>
-            </div>
-
-            <div class="plan-card" style="border: 2px solid #a1887f;">
-                <span style="background-color: #a1887f; color: #000; padding: 5px 10px; text-transform: uppercase; font-size: 0.8em; position: absolute; margin-top: -50px; margin-left: -40px;">Más Popular</span>
-                <h4>Plan Boutique Master</h4>
-                <p class="plan-price">$66.00 / mes</p>
-                 <ul style="list-style: none; padding: 0;">
-                    <li>✓ 6 Bolsas de 250g</li>
-                    <li>✓ Envío gratis + 2 Exhibidores</li>
-                    <li>✓ 5% de descuento adicional</li>
-                </ul>
-                <a href="https://wa.me/50379005833?text=Hola!%20Quisiera%20suscribirme%20al%20Plan%20Boutique%20Master." class="whatsapp-btn">Solicitar Plan Master</a>
-            </div>
-        </div>
-
-        <div class="section" id="takehome">
-            <h3>Take-Home Pack</h3>
-             <img src="https://images.unsplash.com/photo-1611854779395-159f5171769a?q=80&w=800&auto=format&fit=crop" alt="Caja de regalo de café" class="coffee-img">
-            <p>$42.00</p>
-            <p>¿Te enamoraste del café de especialidad de El Salvador durante tu estadía? Lévate una caja de presentación elegante con 3 Bolsas de 250g lista para tu equipaje.</p>
-             <a href="https://wa.me/50379005833?text=Hola!%20Quisiera%20encargar%20un%20Take-Home%20Pack." class="whatsapp-btn">Encargar Take-Home Pack</a>
-        </div>
-
-        <div class="section" id="pago">
-            <h3>Formas de Pago y Suscripción</h3>
-            <p>Gestionamos tus pagos mensuales de forma cómoda y segura mediante Transfer 365 o transferencia bancaria directa a cuenta nacional.</p>
-            <p>Al seleccionar tu plan, coordinamos los detalles de renovación mensual directamente vía WhatsApp.</p>
-        </div>
-
+    <div class="card">
+        <h3>Take-Home Pack</h3>
+        <div class="price">$42.00</div>
+        <a href="https://wa.me/50377902129?text=Hola!%20Quisiera%20encargar%20el%20Take-Home%20Pack." class="btn">Encargar Take-Home Pack</a>
     </div>
 
     <footer>
-        <p>VELVET CUMBRE RESERVE COFFEE</p>
-        <p>El Salvador • 1500 MSNM</p>
-        <p>&copy; 2026 Velvet Cumbre, Todos los derechos reservados.</p>
+        &copy; 2026 Velvet Cumbre. Todos los derechos reservados.
     </footer>
 
 </body>
