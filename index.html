@@ -9,7 +9,6 @@
             --bg-color: #050505;
             --card-bg: #111111;
             --accent-gold: #d4af37;
-            --accent-copper: #a36b58;
             --text-main: #f9f9f9;
             --text-muted: #999999;
         }
@@ -30,25 +29,22 @@
             border-bottom: 1px solid #1f1f1f;
         }
 
-        /* LOGO ELEGANTE EN CSS (Si la imagen falla, muestra un sello de lujo perfecto) */
-        .logo-seal {
-            width: 110px;
-            height: 110px;
+        /* LOGO REAL PERFECTO */
+        .logo-container {
+            width: 120px;
+            height: 120px;
             margin: 0 auto 15px auto;
             border-radius: 50%;
             border: 2px solid var(--accent-gold);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #0d0a08;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+            overflow: hidden;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
         }
 
-        .logo-seal span {
-            font-size: 0.9rem;
-            color: var(--accent-gold);
-            letter-spacing: 2px;
-            font-weight: bold;
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         h1 {
@@ -88,31 +84,22 @@
             box-shadow: 0 12px 35px rgba(0,0,0,0.7);
         }
 
-        /* BOLSA DE CAFÉ MINIMALISTA DE LUJO */
-        .coffee-bag {
-            width: 90px;
-            height: 130px;
-            background: linear-gradient(135deg, #181513, #0a0807);
-            margin: 0 auto 20px auto;
-            border-radius: 6px 6px 3px 3px;
-            border: 1px solid var(--accent-gold);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        /* FOTOGRAFÍAS DE LAS BOLSAS DE CAFÉ */
+        .product-img-container {
+            width: 100%;
+            max-height: 260px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.6);
         }
 
-        .bag-tag {
-            border: 1px solid rgba(212, 175, 55, 0.4);
-            padding: 6px 10px;
-            text-align: center;
-        }
-
-        .bag-tag-title {
-            font-size: 0.45rem;
-            color: var(--accent-gold);
-            letter-spacing: 2px;
-            text-transform: uppercase;
+        .product-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .card h3 {
@@ -159,28 +146,20 @@
             font-size: 0.85rem;
             letter-spacing: 1px;
             box-sizing: border-box;
-            transition: opacity 0.2s;
         }
 
-        .btn-card:active {
-            opacity: 0.8;
-        }
-
-        /* Botón Tarjeta limpio */
         .btn-pay {
             background: linear-gradient(135deg, #d4af37, #aa8228);
             color: #050505;
             box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
         }
 
-        /* Botón Transfer 365 */
         .btn-transfer {
             background-color: #161b22;
             color: #f0f6fc;
             border: 1px solid #30363d;
         }
 
-        /* Botón WhatsApp */
         .btn-wsp {
             background-color: transparent;
             color: #25d366;
@@ -199,9 +178,9 @@
 <body>
 
     <header>
-        <!-- Sello de marca elegante infalible (nunca dará error de imagen rota) -->
-        <div class="logo-seal">
-            <span>VC</span>
+        <!-- Tu logo real cargado desde GitHub -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Velvet Cumbre Logo">
         </div>
         <h1>Velvet Cumbre</h1>
         <div class="subtitle">Reserve Coffee</div>
@@ -212,10 +191,8 @@
 
         <!-- PLAN BOUTIQUE -->
         <div class="card">
-            <div class="coffee-bag">
-                <div class="bag-tag">
-                    <div class="bag-tag-title">BOUTIQUE</div>
-                </div>
+            <div class="product-img-container">
+                <img src="bolsa1.png" alt="Plan Boutique Velvet Cumbre">
             </div>
             <h3>Plan Boutique</h3>
             <div class="price">$24.00 / mes</div>
@@ -225,7 +202,7 @@
                 <li>✓ 1 Exhibidor para estación de café</li>
             </ul>
             <div class="btn-group">
-                <!-- Cambia el '#' por tu enlace de Wise directo -->
+                <!-- Reemplaza el '#' con tu enlace de pago de Wise -->
                 <a href="#" class="btn-card btn-pay">💳 Pagar con Tarjeta ($24.00)</a>
                 <a href="https://wa.me/50379005833?text=Hola!%20Quiero%20pagar%20el%20Plan%20Boutique%20por%20Transfer%20365." class="btn-card btn-transfer">🏦 Pagar por Transfer 365</a>
                 <a href="https://wa.me/50379005833?text=Hola!%20Quisiera%20más%20información%20sobre%20el%20Plan%20Boutique." class="btn-card btn-wsp">💬 Consultas por WhatsApp</a>
@@ -234,10 +211,8 @@
 
         <!-- PLAN MASTER -->
         <div class="card" style="border-color: #33271a;">
-            <div class="coffee-bag" style="border-color: #fff;">
-                <div class="bag-tag" style="border-color: #fff;">
-                    <div class="bag-tag-title" style="color: #fff;">MASTER</div>
-                </div>
+            <div class="product-img-container">
+                <img src="bolsa2.png" alt="Plan Boutique Master Velvet Cumbre">
             </div>
             <h3>Plan Boutique Master</h3>
             <div class="price">$66.00 / mes</div>
@@ -247,7 +222,7 @@
                 <li>✓ 5% de descuento preferencial</li>
             </ul>
             <div class="btn-group">
-                <!-- Cambia el '#' por tu enlace de Wise directo -->
+                <!-- Reemplaza el '#' con tu enlace de pago de Wise -->
                 <a href="#" class="btn-card btn-pay">💳 Pagar con Tarjeta ($66.00)</a>
                 <a href="https://wa.me/50379005833?text=Hola!%20Quiero%20pagar%20el%20Plan%20Master%20por%20Transfer%20365." class="btn-card btn-transfer">🏦 Pagar por Transfer 365</a>
                 <a href="https://wa.me/50379005833?text=Hola!%20Quisiera%20más%20información%20sobre%20el%20Plan%20Master." class="btn-card btn-wsp">💬 Consultas por WhatsApp</a>
@@ -256,24 +231,21 @@
 
         <!-- TAKE HOME PACK -->
         <div class="card">
-            <div class="coffee-bag">
-                <div class="bag-tag">
-                    <div class="bag-tag-title">TAKE-HOME</div>
-                </div>
+            <div class="product-img-container">
+                <img src="bolsa1.png" alt="Take-Home Pack Velvet Cumbre">
             </div>
             <h3>Take-Home Pack</h3>
-            <label class="price">$42.00</label>
-            <div style="height: 10px;"></div>
+            <div class="price">$42.00</div>
             <ul class="features">
                 <li>✓ Caja de presentación elegante</li>
                 <li>✓ 3 Bolsas de 250g listas para equipaje</li>
                 <li>✓ Selección especial de altura</li>
             </ul>
             <div class="btn-group">
-                <!-- Cambia el '#' por tu enlace de Wise directo -->
+                <!-- Reemplaza el '#' con tu enlace de pago de Wise -->
                 <a href="#" class="btn-card btn-pay">💳 Pagar con Tarjeta ($42.00)</a>
-                <a href="https://wa.me/50377902129 ?text=Hola!%20Quiero%20pagar%20el%20Take-Home%20Pack%20por%20Transfer%20365." class="btn-card btn-transfer">🏦 Pagar por Transfer 365</a>
-                <a href="https://wa.me/50377902129 ?text=Hola!%20Quisiera%20más%20información%20sobre%20el%20Take-Home%20Pack." class="btn-card btn-wsp">💬 Consultas por WhatsApp</a>
+                <a href="https://wa.me/50377902129?text=Hola!%20Quiero%20pagar%20el%20Take-Home%20Pack%20por%20Transfer%20365." class="btn-card btn-transfer">🏦 Pagar por Transfer 365</a>
+                <a href="https://wa.me/50377902129?text=Hola!%20Quisiera%20más%20información%20sobre%20el%20Take-Home%20Pack." class="btn-card btn-wsp">💬 Consultas por WhatsApp</a>
             </div>
         </div>
 
